@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  buf = (fs.readFileSync('/bitstarter/index.html'));
+  var buf = (fs.readFileSync('/bitstarter/index.html'));
   buf.toString(buf);
 });
 
